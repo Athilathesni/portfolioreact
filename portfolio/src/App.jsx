@@ -5,6 +5,10 @@ import './App.css'
 import Main from './components/Main'
 import Nav from './components/Nav'
 import Projects from './components/Projects'
+import Contact from './components/Contact';
+import Footer from './components/Footer'
+
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +18,9 @@ function App() {
    <Main />
    <Nav/>
    <Projects/>
+   <Contact />
+   <Footer/>
+  
   </>
   )
 }

@@ -8,7 +8,7 @@ const Main=()=>{
           <img className="w-full h-screen object-cover" src="/src/portfolio.jpg" alt="" />
           <div className='w-full h-screen absolute top-0 left-0 bg-white/40'>
         <div className='max-w-[700px] m-auto h-full flex flex-col justify-center lg:items-start items-center  text-blue-950'>
-          <h1 className='sm:text-5xl text-4xl front-bold text-gray-800 hover:uppercase font-serif'>
+          <h1 className='animate-bounce sm:text-5xl text-4xl front-bold text-gray-800 font-serif'>
             I'm Athila Thesni
           </h1>
           <h2 className='flex sm:text-3xl text-2xl pt-4 text-teal-900 text-opacity-50'>
@@ -35,6 +35,7 @@ const Main=()=>{
             <FaLinkedinIn className='cursor-pointer' size={20} />
           </div>
         </div>
+        
       </div>
 
           
