@@ -7,6 +7,7 @@ import Nav from './components/Nav'
 import Projects from './components/Projects'
 import Contact from './components/Contact';
 import Footer from './components/Footer'
+import Skills from './components/Skills'
 
 
 
@@ -17,6 +18,7 @@ function App() {
      <>
    <Main />
    <Nav/>
+   <Skills/>
    <Projects/>
    <Contact />
    <Footer/>

@@ -10,7 +10,7 @@ import weatherImg from '../assets/weather.avif'
 
 const Projects = () => {
   return (
-    <div id='projects' className='max-w-[1080px] m-auto md:pl-20 p-4 py-16'>
+    <div id='projects' className='max-w-[1080px] m-auto md:pl-20 p-4 py-16 mb-10 '>
       <h1 className='text-4xl font-bold text-center text-[#001b5e]'>
       𝑷𝑹𝑶𝑱𝑬𝑪𝑻𝑺
       </h1>
