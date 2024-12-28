@@ -21,12 +21,12 @@ const Projects = () => {
         laboriosam sed perferendis.
       </p>
       <div className=' grid sm:grid-cols-2 gap-12 w-full h-full'>
-        <Pitem img={instaImg} title='Insatgram'/>
-        <Pitem img={flipcartImg} title='Flipcart'/>
-        <Pitem img={olxImg} title='OLX' />
-        <Pitem img={bookmyshowImg} title='Book My Show'/>
-        <Pitem img={bloodImg} title='Blood Bank'/>
-        <Pitem img={weatherImg} title='Weather'/>
+        <Pitem img={instaImg} title='Insatgram' githubLink='https://github.com/Athilathesni/reactinsta.git'/>
+        <Pitem img={flipcartImg} title='Flipcart' githubLink='https://github.com/Athilathesni/productreact.git' />
+        <Pitem img={olxImg} title='OLX' githubLink='https://github.com/Athilathesni/olxreact.git'/>
+        <Pitem img={bookmyshowImg} title='Book My Show' githubLink='https://github.com/Athilathesni/bookms.git'/>
+        <Pitem img={bloodImg} title='Blood Bank'githubLink='https://github.com/Athilathesni/blood-bank.git'/>
+        <Pitem img={weatherImg} title='Weather'githubLink='https://github.com/Athilathesni/weather.git'/>
       </div>
     </div>
   );

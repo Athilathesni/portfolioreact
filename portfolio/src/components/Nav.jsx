@@ -52,7 +52,7 @@ import {
   
             <a
               onClick={handleNav}
-              href='#main'
+              href='#contact'
               className='w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200'
             >
               <BsPerson size={20} />
@@ -93,7 +93,7 @@ import {
               <AiOutlineProject size={20} />
             </a>
             <a
-              href='#main'
+              href='#contact'
               className='rounded-full bg-gray-300 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'
             >
               <BsPerson size={20} />
