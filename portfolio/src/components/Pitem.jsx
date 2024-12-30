@@ -15,8 +15,8 @@ const ProjectItem = ({ img, title, githubLink }) => {
           rel="noopener noreferrer" 
           className='text-blue-500 border border-white bg-white mt-5 hover:underline flex items-center justify-center space-x-2'
         >
-          <FaGithub className='text-black' /> {/* GitHub icon */}
-          <span>GitHub</span> {/* Text next to the icon */}
+          <FaGithub className='text-black' />
+          <span>GitHub</span> 
         </a>
       </div>
     </div>

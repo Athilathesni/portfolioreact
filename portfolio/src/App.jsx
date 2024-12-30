@@ -9,7 +9,6 @@ import Contact from './components/Contact';
 import Footer from './components/Footer'
 import Skills from './components/Skills'
 import About from './components/About'
-import Resume from './components/Resume'
 
 
 
@@ -25,9 +24,6 @@ function App() {
    <Projects/>
    <Contact />
    <Footer/>
-   <Resume/>
-  
-  
   </>
   )
 }

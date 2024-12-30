@@ -13,7 +13,7 @@ const Contact = () => {
       >
         <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
           <div className='flex flex-col'>
-            <label className='uppercase text-sm py-2'>Name</label>
+            <label className='uppercase text-sm py-2 text-red-900 italic'>Name</label>
             <input
               className='border-2 rounded-lg p-3 flex border-gray-300'
               type='text'
@@ -21,7 +21,7 @@ const Contact = () => {
             />
           </div>
           <div className='flex flex-col'>
-            <label className='uppercase text-sm py-2'>Phone Number</label>
+            <label className='uppercase text-sm py-2 text-red-900 italic'>Phone Number</label>
             <input
               className='border-2 rounded-lg p-3 flex border-gray-300'
               type='text'
@@ -30,7 +30,7 @@ const Contact = () => {
           </div>
         </div>
         <div className='flex flex-col py-2'>
-          <label className='uppercase text-sm py-2'>Email</label>
+          <label className='uppercase text-sm py-2 text-red-900 italic'>Email</label>
           <input
             className='border-2 rounded-lg p-3 flex border-gray-300'
             type='email'
@@ -39,7 +39,7 @@ const Contact = () => {
         </div>
 
         <div className='flex flex-col py-2'>
-          <label className='uppercase text-sm py-2'>Subject</label>
+          <label className='uppercase text-sm py-2 text-red-900 italic'>Subject</label>
           <input
             className='border-2 rounded-lg p-3 flex border-gray-300'
             type='text'
@@ -47,7 +47,7 @@ const Contact = () => {
           />
         </div>
         <div className='flex flex-col py-2'>
-          <label className='uppercase text-sm py-2'>Message</label>
+          <label className='uppercase text-sm py-2 text-red-900 italic'>Message</label>
           <textarea
             className='border-2 rounded-lg p-3 border-gray-300'
             rows='10'

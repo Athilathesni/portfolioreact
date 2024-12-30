@@ -1,4 +1,6 @@
+
 import React from 'react';
+import { motion } from 'framer-motion';  // Import motion from framer-motion
 
 // You can import images here
 import htmlLogo from '../assets/html.png';
@@ -16,47 +18,38 @@ const Skills = () => {
     {
       name: "HTML",
       logo: htmlLogo,  // Use the imported image
-      
     },
     {
       name: "CSS",
       logo: cssLogo,  // Use the imported image
-     
     },
     {
       name: "JAVASCRIPT",
       logo: javascriptLogo,  // Use the imported image
-     
     },
     {
       name: "REACT",
       logo: reactLogo,  // Use the imported image
-     
     },
     {
       name: "MONGODB",
       logo: mongodbLogo,  // Use the imported image
-     
     },
     {
       name: "BOOTSTRAP",
       logo: bootstrapLogo,  // Use the imported image
-      
     },
     {
       name: "NODE JS",
       logo: nodejsLogo,  // Use the imported image
-      
     },
     {
       name: "EXPRESS",
       logo: expressLogo,  // Use the imported image
-    
     },
     {
       name: "TAILWIND CSS",
       logo: tailwindLogo,  // Use the imported image
-      
     }
   ];
 
@@ -68,9 +61,20 @@ const Skills = () => {
         </h3>
         <div className="flex items-center justify-center mt-12 gap-8 flex-wrap">
           {skills?.map((skill, i) => (
-            <div
+            <motion.div
               key={i}
-              className="group border-2 border-cyan-100 relative min-w-[100px] max-w-[160px] bg-gray-900 p-4 rounded-xl transform-gpu hover:scale-105 transition-all duration-300 ease-in-out"
+              className="group border-2 border-cyan-100 relative min-w-[100px] max-w-[160px] bg-gray-900 p-4 rounded-xl"
+              // Add the spring animation effect here
+              whileHover={{
+                scale: 1.05,  // Slight scaling when hovering
+                rotate: 5,    // Small rotation
+                transition: {
+                  type: "spring",  // Use spring-based transition
+                  stiffness: 300,  // Stiffness for the spring effect
+                  damping: 20,     // Damping for smoothness
+                },
+              }}
+              whileTap={{ scale: 0.95 }}  // Scale down when the card is clicked (tap effect)
             >
               <p className="text-xl mb-2">{skill.name}</p>
               <div
@@ -87,7 +91,7 @@ const Skills = () => {
                   />
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
@@ -96,3 +100,4 @@ const Skills = () => {
 };
 
 export default Skills;
+
