@@ -8,6 +8,8 @@ import Projects from './components/Projects'
 import Contact from './components/Contact';
 import Footer from './components/Footer'
 import Skills from './components/Skills'
+import About from './components/About'
+import Resume from './components/Resume'
 
 
 
@@ -17,14 +19,18 @@ function App() {
   return (
      <>
    <Main />
-   <Nav/>
+   <Nav/> 
+   <About/>
    <Skills/>
    <Projects/>
    <Contact />
    <Footer/>
+   <Resume/>
+  
   
   </>
   )
 }
 
 export default App
+
