@@ -11,8 +11,8 @@ const Contact = () => {
         method='POST'
         encType='multipart/form-data'
       >
-        <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
-          <div className='flex flex-col'>
+        <div className='grid md:grid-cols-2 gap-4 w-full py-2 pl-40'>
+          <div className='flex flex-col w-[200px]'>
             <label className='uppercase text-sm py-2 text-red-900 italic'>Name</label>
             <input
               className='border-2 rounded-lg p-3 flex border-gray-300'
@@ -20,7 +20,7 @@ const Contact = () => {
               name='name'
             />
           </div>
-          <div className='flex flex-col'>
+          <div className='flex flex-col w-[200px]'>
             <label className='uppercase text-sm py-2 text-red-900 italic'>Phone Number</label>
             <input
               className='border-2 rounded-lg p-3 flex border-gray-300'
@@ -29,7 +29,7 @@ const Contact = () => {
             />
           </div>
         </div>
-        <div className='flex flex-col py-2'>
+        <div className='flex flex-col py-2 w-[500px] pl-40'>
           <label className='uppercase text-sm py-2 text-red-900 italic'>Email</label>
           <input
             className='border-2 rounded-lg p-3 flex border-gray-300'
@@ -38,7 +38,7 @@ const Contact = () => {
           />
         </div>
 
-        <div className='flex flex-col py-2'>
+        <div className='flex flex-col py-2 w-[500px] pl-40'>
           <label className='uppercase text-sm py-2 text-red-900 italic'>Subject</label>
           <input
             className='border-2 rounded-lg p-3 flex border-gray-300'
@@ -46,7 +46,7 @@ const Contact = () => {
             name='subject'
           />
         </div>
-        <div className='flex flex-col py-2'>
+        <div className='flex flex-col py-2 w-[500px] pl-40'>
           <label className='uppercase text-sm py-2 text-red-900 italic'>Message</label>
           <textarea
             className='border-2 rounded-lg p-3 border-gray-300'
@@ -54,7 +54,7 @@ const Contact = () => {
             name='message'
           ></textarea>
         </div>
-        <button className='bg-[#001b5e] text-gray-100 mt-4 w-full  p-4 rounded-lg'>
+        <button className='bg-[#001b5e] text-gray-100 mt-4 w-[300px]p-4 rounded-lg pl-20'>
           Send Message
         </button>
       </form>
@@ -63,3 +63,5 @@ const Contact = () => {
 };
 
 export default Contact;
+
+

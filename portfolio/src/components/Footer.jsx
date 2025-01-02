@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+// import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const Footer= () => {
   return (
@@ -19,7 +19,7 @@ const Footer= () => {
           <p>Address: Wayanad</p>
         </div>
 
-        <div>
+        {/* <div>
           <h3 className="text-xl font-bold mb-4">Social Media</h3>
           <div className="flex space-x-4">
             <a href="https://facebook.com" target="_blank"
@@ -43,7 +43,7 @@ const Footer= () => {
                             hover:text-gray-300" />
             </a>
           </div>
-        </div>
+        </div> */}
 
         <div>
           <h3 className="text-xl font-bold mb-4">Services</h3>

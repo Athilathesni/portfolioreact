@@ -1,8 +1,8 @@
 
-import React from 'react';
-import { motion } from 'framer-motion';  // Import motion from framer-motion
 
-// You can import images here
+import React from 'react';
+import { motion } from 'framer-motion'; 
+
 import htmlLogo from '../assets/html.png';
 import cssLogo from '../assets/css.webp';
 import javascriptLogo from '../assets/js1.png';
@@ -12,49 +12,54 @@ import bootstrapLogo from '../assets/bootstrap.webp';
 import nodejsLogo from '../assets/node.png';
 import expressLogo from '../assets/express-js.png';
 import tailwindLogo from '../assets/tailwind.png';
+import backgroundImage from '../assets/port2.png';
 
 const Skills = () => {
   const skills = [
     {
       name: "HTML",
-      logo: htmlLogo,  // Use the imported image
+      logo: htmlLogo, 
     },
     {
       name: "CSS",
-      logo: cssLogo,  // Use the imported image
+      logo: cssLogo,  
     },
     {
       name: "JAVASCRIPT",
-      logo: javascriptLogo,  // Use the imported image
+      logo: javascriptLogo,  
     },
     {
       name: "REACT",
-      logo: reactLogo,  // Use the imported image
+      logo: reactLogo,  
     },
     {
       name: "MONGODB",
-      logo: mongodbLogo,  // Use the imported image
+      logo: mongodbLogo,  
     },
     {
       name: "BOOTSTRAP",
-      logo: bootstrapLogo,  // Use the imported image
+      logo: bootstrapLogo,  
     },
     {
       name: "NODE JS",
-      logo: nodejsLogo,  // Use the imported image
+      logo: nodejsLogo,  
     },
     {
       name: "EXPRESS",
-      logo: expressLogo,  // Use the imported image
+      logo: expressLogo, 
     },
     {
       name: "TAILWIND CSS",
-      logo: tailwindLogo,  // Use the imported image
+      logo: tailwindLogo,  
     }
   ];
 
   return (
-    <section id="skills" className="bg-gray-100 flex items-center justify-center min-h-screen">
+    <section
+      id="skills"
+      className="flex items-center justify-center min-h-screen"
+      style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+    >
       <div className="max-w-[1060px] text-gray-100 text-center">
         <h3 className="text-4xl font-semibold">
           <span className="text-[#001b5e]">𝙎𝙆𝙄𝙇𝙇𝙎</span>
@@ -64,17 +69,17 @@ const Skills = () => {
             <motion.div
               key={i}
               className="group border-2 border-cyan-100 relative min-w-[100px] max-w-[160px] bg-gray-900 p-4 rounded-xl"
-              // Add the spring animation effect here
+              
               whileHover={{
-                scale: 1.05,  // Slight scaling when hovering
-                rotate: 5,    // Small rotation
+                scale: 1.05,  
+                rotate: 5,    
                 transition: {
-                  type: "spring",  // Use spring-based transition
-                  stiffness: 300,  // Stiffness for the spring effect
-                  damping: 20,     // Damping for smoothness
+                  type: "spring",  
+                  stiffness: 300,  
+                  damping: 20,     
                 },
               }}
-              whileTap={{ scale: 0.95 }}  // Scale down when the card is clicked (tap effect)
+              whileTap={{ scale: 0.95 }} 
             >
               <p className="text-xl mb-2">{skill.name}</p>
               <div
