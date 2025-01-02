@@ -29,7 +29,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="relative flex items-center justify-center min-h-screen  bg-zinc-600"
+      className="relative flex items-center justify-center min-h-screen  bg-gray-600 top-0 left-0 border-2 border-black-900"
       // style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
 
     >

@@ -78,10 +78,9 @@ const Contact = () => {
   return (
     <div 
       id='contact'
-      className='w-full bg-cover bg-center mt-[-40px] bg-gradient-animation  bg-zinc-600'
+      className='w-full bg-cover bg-center mt-[-40px] bg-gradient-animation  bg-gray-600 top-0 left-0  border-2 border-black-900 '
       // style={{ backgroundImage: "url('/src/portf.avif')" }} 
       >
-      
       <h1 className='py-4 text-4xl font-bold text-center text-sky-700'>
         𝘾𝙊𝙉𝙏𝘼𝘾𝙏
       </h1>
@@ -90,7 +89,7 @@ const Contact = () => {
         method='POST'
         encType='multipart/form-data'
       >
-        <div className='ml-[500px]'>
+        <div className='ml-[300px]'>
           <div className='grid md:grid-cols-2 gap-4 w-full py-2 pl-40'>
             <div className='flex flex-col w-[300px]'>
               <label className='uppercase text-sm py-2 text-red-200 italic font-bold'>Name</label>
@@ -100,7 +99,7 @@ const Contact = () => {
                 name='name'
               />
             </div>
-            <div className='flex flex-col w-[300px] ml-[-250px]'>
+            <div className='flex flex-col w-[300px] ml-[-200px]'>
               <label className='uppercase text-sm py-2 text-red-200 italic font-bold'>Phone Number</label>
               <input
                 className='border-2 rounded-lg p-3 flex border-gray-300'
