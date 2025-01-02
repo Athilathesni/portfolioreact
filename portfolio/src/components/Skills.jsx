@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import { motion } from 'framer-motion'; 
 
@@ -12,64 +11,57 @@ import bootstrapLogo from '../assets/bootstrap.webp';
 import nodejsLogo from '../assets/node.png';
 import expressLogo from '../assets/express-js.png';
 import tailwindLogo from '../assets/tailwind.png';
-import backgroundImage from '../assets/port2.png';
+import backgroundImage from '../assets/skill1.avif';
 
 const Skills = () => {
   const skills = [
-    {
-      name: "HTML",
-      logo: htmlLogo, 
-    },
-    {
-      name: "CSS",
-      logo: cssLogo,  
-    },
-    {
-      name: "JAVASCRIPT",
-      logo: javascriptLogo,  
-    },
-    {
-      name: "REACT",
-      logo: reactLogo,  
-    },
-    {
-      name: "MONGODB",
-      logo: mongodbLogo,  
-    },
-    {
-      name: "BOOTSTRAP",
-      logo: bootstrapLogo,  
-    },
-    {
-      name: "NODE JS",
-      logo: nodejsLogo,  
-    },
-    {
-      name: "EXPRESS",
-      logo: expressLogo, 
-    },
-    {
-      name: "TAILWIND CSS",
-      logo: tailwindLogo,  
-    }
+    { name: "HTML", logo: htmlLogo },
+    { name: "CSS", logo: cssLogo },
+    { name: "JAVASCRIPT", logo: javascriptLogo },
+    { name: "REACT", logo: reactLogo },
+    { name: "MONGODB", logo: mongodbLogo },
+    { name: "BOOTSTRAP", logo: bootstrapLogo },
+    { name: "NODE JS", logo: nodejsLogo },
+    { name: "EXPRESS", logo: expressLogo },
+    { name: "TAILWIND CSS", logo: tailwindLogo }
   ];
 
   return (
     <section
       id="skills"
-      className="flex items-center justify-center min-h-screen"
-      style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+      className="relative flex items-center justify-center min-h-screen  bg-zinc-600"
+      // style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+
     >
-      <div className="max-w-[1060px] text-gray-100 text-center">
+
+<div
+        className="absolute top-[20%] left-[10%] w-8 h-8 rounded-full bg-white opacity-60 animate-float-bubble"
+      ></div>
+      <div
+        className="absolute top-[40%] left-[50%] w-12 h-12 rounded-full bg-white opacity-60 animate-float-bubble"
+      ></div>
+      <div
+        className="absolute top-[60%] left-[80%] w-16 h-16 rounded-full bg-white opacity-60 animate-float-bubble"
+      ></div>
+      <div
+        className="absolute top-[70%] left-[20%] w-8 h-8 rounded-full bg-white opacity-60 animate-float-bubble"
+      ></div>
+      <div
+        className="absolute top-[50%] left-[70%] w-12 h-12 rounded-full bg-white opacity-60 animate-float-bubble"
+      ></div>
+
+      {/* Background bubbles animation */}
+      <div className="absolute inset-0 z-0 bg-bubble-pattern bg-bubble-size animate-bubble-animation"></div>
+
+      <div className="max-w-[1060px] text-gray-100 text-center z-10 relative">
         <h3 className="text-4xl font-semibold">
-          <span className="text-[#001b5e]">𝙎𝙆𝙄𝙇𝙇𝙎</span>
+          <span className="text-sky-700">𝙎𝙆𝙄𝙇𝙇𝙎</span>
         </h3>
         <div className="flex items-center justify-center mt-12 gap-8 flex-wrap">
           {skills?.map((skill, i) => (
             <motion.div
               key={i}
               className="group border-2 border-cyan-100 relative min-w-[100px] max-w-[160px] bg-gray-900 p-4 rounded-xl"
-              
               whileHover={{
                 scale: 1.05,  
                 rotate: 5,    
@@ -105,4 +97,5 @@ const Skills = () => {
 };
 
 export default Skills;
+
 

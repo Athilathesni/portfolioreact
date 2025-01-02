@@ -37,7 +37,7 @@ const Main = () => {
                         />
                     </h2>
                     
-                    <div class="mt-48 flex">
+                    <div class="mt-[470px] flex">
             <div class="relative mx-auto h-10 w-10">
           <div class="relative ml-80 h-20 w-20 animate-bounce rounded-full border-2">
           <div class="absolute bottom-0 right-10">
