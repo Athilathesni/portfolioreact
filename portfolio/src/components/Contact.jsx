@@ -1,150 +1,53 @@
-// import React from 'react';
-
-// const Contact = () => {
-//   return (
-//     <div 
-//     id='contact'
-//     className='w-full bg-cover bg-center mt-[-40px]'
-//     style={{ backgroundImage: "url('/src/portf.avif')" }}>
-      
-//       <h1 className='py-4 text-4xl font-bold text-center text-sky-700'>
-//       𝘾𝙊𝙉𝙏𝘼𝘾𝙏
-//       </h1>
-//       <form
-//         action='https://getform.io/f/a405f396-f15e-4495-9d9f-e22c0cf5faf5'
-//         method='POST'
-//         encType='multipart/form-data'
-//       >
-//         <div className='ml-[500px]'>
-//         <div className='grid md:grid-cols-2 gap-4 w-full py-2 pl-40'>
-//           <div className='flex flex-col w-[300px]'>
-//             <label className='uppercase text-sm py-2 text-red-200 italic font-bold'>Name</label>
-//             <input
-//               className='border-2 rounded-lg p-3 flex border-gray-300'
-//               type='text'
-//               name='name'
-//             />
-//           </div>
-//           <div className='flex flex-col w-[300px] ml-[-250px]'>
-//             <label className='uppercase text-sm py-2 text-red-200 italic font-bold'>Phone Number</label>
-//             <input
-//               className='border-2 rounded-lg p-3 flex border-gray-300'
-//               type='text'
-//               name='phone'
-//             />
-//           </div>
-//         </div>
-//         <div className='flex flex-col py-2 w-[850px] pl-40'>
-//           <label className='uppercase text-sm py-2 text-red-200 italic font-bold'>Email</label>
-//           <input
-//             className='border-2 rounded-lg p-3 flex border-gray-300'
-//             type='email'
-//             name='email'
-//           />
-//         </div>
-
-//         <div className='flex flex-col py-2 w-[850px] pl-40'>
-//           <label className='uppercase text-sm py-2 text-red-200 italic font-bold'>Subject</label>
-//           <input
-//             className='border-2 rounded-lg p-3 flex border-gray-300'
-//             type='text'
-//             name='subject'
-//           />
-//         </div>
-//         <div className='flex flex-col py-2 w-[850px] pl-40'>
-//           <label className='uppercase text-sm py-2 text-red-200 italic font-bold'>Message</label>
-//           <textarea
-//             className='border-2 rounded-lg p-3 border-gray-300'
-//             rows='10'
-//             name='message'
-//           ></textarea>
-//         </div>
-//         <div className='pl-80'>
-//         <button className='bg-[#001b5e] text-gray-100 mt-4 w-[300px] p-4 rounded-lg mb-4 font-bold'>
-//           Send Message
-//         </button></div>
-//         </div>
-//       </form>
-//     </div>
-//   );
-// };
-
-// export default Contact;
-
-
 import React from 'react';
+import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'; // Import icons from react-icons
 
 const Contact = () => {
   return (
-    <div 
-      id='contact'
-      className='w-full bg-cover bg-center mt-[-40px] bg-gradient-animation  bg-gray-600 top-0 left-0  border-2 border-black-900 '
-      // style={{ backgroundImage: "url('/src/portf.avif')" }} 
-      >
-      <h1 className='py-4 text-4xl font-bold text-center text-sky-700'>
-        𝘾𝙊𝙉𝙏𝘼𝘾𝙏
-      </h1>
-      <form
-        action='https://getform.io/f/a405f396-f15e-4495-9d9f-e22c0cf5faf5'
-        method='POST'
-        encType='multipart/form-data'
-      >
-        <div className='ml-[300px]'>
-          <div className='grid md:grid-cols-2 gap-4 w-full py-2 pl-40'>
-            <div className='flex flex-col w-[300px]'>
-              <label className='uppercase text-sm py-2 text-red-200 italic font-bold'>Name</label>
-              <input
-                className='border-2 rounded-lg p-3 flex border-gray-300'
-                type='text'
-                name='name'
-              />
-            </div>
-            <div className='flex flex-col w-[300px] ml-[-200px]'>
-              <label className='uppercase text-sm py-2 text-red-200 italic font-bold'>Phone Number</label>
-              <input
-                className='border-2 rounded-lg p-3 flex border-gray-300'
-                type='text'
-                name='phone'
-              />
-            </div>
-          </div>
-          <div className='flex flex-col py-2 w-[850px] pl-40'>
-            <label className='uppercase text-sm py-2 text-red-200 italic font-bold'>Email</label>
-            <input
-              className='border-2 rounded-lg p-3 flex border-gray-300'
-              type='email'
-              name='email'
-            />
-          </div>
+    <div
+      className="w-full m-auto md:pl-20 p-4 py-16 mb-[-10px] mt-[-100px] relative   bg-gray-600 top-0 left-0  border-2 border-black-900"
+    >
+      <div className="bg-white p-8 rounded-lg shadow-lg max-w-lg w-full text-center ml-[400px] shadow-2xl  motion-preset-bounce motion-duration-2000">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-4">Get in Touch</h2>
+        <p className="text-gray-700 mb-6">Feel free to reach out through any of the following platforms:</p>
 
-          <div className='flex flex-col py-2 w-[850px] pl-40'>
-            <label className='uppercase text-sm py-2 text-red-200 italic font-bold'>Subject</label>
-            <input
-              className='border-2 rounded-lg p-3 flex border-gray-300'
-              type='text'
-              name='subject'
-            />
-          </div>
-          <div className='flex flex-col py-2 w-[850px] pl-40'>
-            <label className='uppercase text-sm py-2 text-red-200 italic font-bold'>Message</label>
-            <textarea
-              className='border-2 rounded-lg p-3 border-gray-300'
-              rows='10'
-              name='message'
-            ></textarea>
-          </div>
-          <div className='pl-80'>
-            <button className='bg-[#001b5e] text-gray-100 mt-4 w-[300px] p-4 rounded-lg mb-4 font-bold'>
-              Send Message
-            </button>
-          </div>
+        <div className="flex justify-center space-x-6">
+          {/* LinkedIn */}
+          <a
+            href="https://www.linkedin.com/in/AthilaThesni c"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-indigo-600 hover:text-indigo-800 transition duration-200"
+            aria-label="LinkedIn"
+            title="Connect with me on LinkedIn - AthilaThesni c"
+          >
+            <FaLinkedin className="w-8 h-8" />
+          </a>
+
+          {/* GitHub */}
+          <a
+            href="https://github.com/Athilathesni"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-800 hover:text-gray-900 transition duration-200"
+            aria-label="GitHub"
+            title="Follow me on GitHub - Athilathesni"
+          >
+            <FaGithub className="w-8 h-8" />
+          </a>
+
+          {/* Email */}
+          <a
+            href="mailto:usmanchusman606@gmail.com"
+            className="text-red-600 hover:text-red-800 transition duration-200"
+            aria-label="Email"
+            title="Email me at AthilaThesni.com"
+          >
+            <FaEnvelope className="w-8 h-8" />
+          </a>
         </div>
-      </form>
+      </div>
     </div>
   );
 };
 
 export default Contact;
-
-
-
